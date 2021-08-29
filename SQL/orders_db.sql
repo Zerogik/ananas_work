@@ -57,7 +57,12 @@ CREATE TABLE sessions
     CONSTRAINT fk_session_staff FOREIGN KEY (staff_id) REFERENCES staff (id),
     CONSTRAINT fk_zakaz FOREIGN KEY (zakaz_id) REFERENCES zakaz (or_id)
 );
-
+CREATE TABLE price
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR (30) NOT NULL,
+    cst INT NOT NULL
+);
 
 
 
