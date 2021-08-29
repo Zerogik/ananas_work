@@ -63,6 +63,9 @@ CREATE TABLE price
     name VARCHAR (30) NOT NULL,
     cst INT NOT NULL
 );
+ALTER TABLE zakaz
+    ADD COLUMN name_price INT
+AFTER or_id;
 
 
 
