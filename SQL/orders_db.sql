@@ -67,5 +67,13 @@ ALTER TABLE zakaz
     ADD COLUMN name_price INT
 AFTER or_id;
 
+CREATE TABLE cost
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name_price INT,
+    hours INT,
+    CONSTRAINT fk_cstmix FOREIGN KEY (name_price)
+        REFERENCES zakaz (name_price)
+);
 
 
