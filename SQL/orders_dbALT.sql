@@ -70,7 +70,7 @@ CREATE TABLE sessions
     CONSTRAINT fk_project FOREIGN KEY (project_id) REFERENCES projects (id)
 );
 
-CREATE TABLE buhgalters_book (
+CREATE TABLE checks (
     id INT PRIMARY KEY AUTO_INCREMENT,
     paydate DATETIME DEFAULT CURRENT_TIMESTAMP(),
     project_id INT NOT NULL,
