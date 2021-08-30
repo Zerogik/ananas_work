@@ -37,13 +37,14 @@ CREATE TABLE clients
 );
 CREATE TABLE zakaz
 (
-    or_id INT PRIMARY KEY AUTO_INCREMENT,
+    or_id     INT PRIMARY KEY AUTO_INCREMENT,
     client_id INT NOT NULL,
-    pr_name VARCHAR (250),
-    note VARCHAR (250),
-    staff_id INT,
+    project   VARCHAR(250),
+    song      VARCHAR(250),
+    note      VARCHAR(250),
+    staff_id  INT,
     completed BOOLEAN,
-    paid BOOLEAN,
+    paid      BOOLEAN,
     CONSTRAINT fk_staff FOREIGN KEY (staff_id) REFERENCES staff (id),
     CONSTRAINT fk_cl FOREIGN KEY (client_id) REFERENCES clients (cl_id)
 );
