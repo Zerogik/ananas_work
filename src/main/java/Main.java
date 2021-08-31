@@ -4,7 +4,7 @@ public class Main {
         String a;
         String b;
         String c,d;
-        a = ",kimoR";
+        a = ",riK";
         b = " ";
         c = " et ner";
         d = "h v";
