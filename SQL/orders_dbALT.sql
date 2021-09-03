@@ -36,9 +36,7 @@ CREATE TABLE clients
     name     VARCHAR(50) NOT NULL,
     contacts VARCHAR(30) NOT NULL,
     email    VARCHAR(50),
-    note     VARCHAR(250),
-    source_id INT,
-CONSTRAINT fk_source FOREIGN KEY (source_id) REFERENCES source (id)
+    note     VARCHAR(250)
 );
 CREATE TABLE projects
 (
