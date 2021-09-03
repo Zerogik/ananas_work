@@ -35,3 +35,17 @@ VALUES ('voron', 0, 2),
        ('crack', 1, 3),
        ('j-j-j', 0, 1),
        ('r-r-r', 1, 1);
+INSERT INTO source (name)
+VALUES ('yandex search'),
+       ('yandex contexst'),
+       ('google search'),
+       ('google adw'),
+       ('instagramm'),
+       ('youtube')
+       ;
+INSERT INTO source (staff_s_id)
+VALUES (1),
+       (3),
+       (2),
+       (4)
+;
