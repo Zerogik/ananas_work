@@ -43,9 +43,3 @@ VALUES ('yandex search'),
        ('instagramm'),
        ('youtube')
        ;
-INSERT INTO source (staff_s_id)
-VALUES (1),
-       (3),
-       (2),
-       (4)
-;

@@ -80,6 +80,4 @@ CREATE TABLE source
 (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR (50),
-    staff_s_id INT,
-    CONSTRAINT fk_staff_s FOREIGN KEY (staff_s_id) REFERENCES staff (id)
 );
